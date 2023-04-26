@@ -1,0 +1,22 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+use_frameworks!
+
+ def main_pods
+   pod 'SnapKit', '~> 5.6.0'
+ end
+
+target 'Navigation' do
+  main_pods
+  use_frameworks!
+end
+
+target 'StorageService' do
+  main_pods
+  use_frameworks!
+
+  target 'StorageServiceTests' do
+    main_pods
+  end
+
+end
